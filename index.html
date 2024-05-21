@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Exponencial e Logarítmica</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora Exponencial e Logarítmica</h1>
+        <div class="calculator">
+            <input type="number" id="base-number" placeholder="Digite a base (para e^x, use e ≈ 2.718)" oninput="clearResult()">
+            <input type="number" id="exp-number" placeholder="Digite o expoente (x)" oninput="clearResult()">
+            <select id="operation">
+                <option value="exp">Exponenciação (base^expoente)</option>
+                <option value="log">Logaritmo Natural (ln(x))</option>
+            </select>
+            <button onclick="calculate()">Calcular</button>
+            <div id="result"></div>
+            <div id="error"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
