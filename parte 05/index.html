@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Exponencial e Logarítmica</title>
+    <link rel="stylesheet" href="/parte 05/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora Exponencial e Logarítmica</h1>
+        <div class="calculator">
+            <select id="operation" onchange="toggleInputs()">
+                <option value="exp">Exponenciação</option>
+                <option value="log">Logaritmo</option>
+            </select>
+            
+            <div id="exp-inputs" class="input-group">
+                <input type="number" id="base-number" placeholder="Digite a base" oninput="clearResult()">
+                <input type="number" id="exp-number" placeholder="Digite o expoente" oninput="clearResult()">
+            </div>
+            
+            <div id="log-inputs" class="input-group">
+                <input type="number" id="log-base-number" placeholder="Digite a base do logaritmo" oninput="clearResult()">
+                <input type="number" id="log-number" placeholder="Digite o valor" oninput="clearResult()">
+            </div>
+            
+            <button onclick="calculate()">Calcular</button>
+            
+            <div id="result"></div>
+            <div id="error"></div>
+        </div>
+
+        <div class="info">
+            <h2>Exponenciação</h2>
+            <p><strong>História:</strong> A operação de exponenciação tem suas raízes na antiguidade, quando matemáticos como Euclides estudaram potências de números inteiros. No entanto, o conceito moderno de exponenciação, especialmente com bases diferentes de 10 e o uso de números fracionários ou negativos como expoentes, foi formalizado durante o Renascimento. Um dos marcos importantes foi a introdução dos logaritmos por John Napier no século XVII, que ajudou a simplificar os cálculos exponenciais.</p>
+            <p><strong>Propósito:</strong> A exponenciação é uma operação matemática fundamental que eleva um número (a base) a uma potência (o expoente). Ela é amplamente usada em diversas áreas como física, engenharia, finanças e computação, onde fenômenos de crescimento exponencial, como juros compostos, decaimento radioativo, crescimento populacional e algoritmos de criptografia são modelados.</p>
+            <p><strong>Cálculo:</strong> A exponenciação de um número base (a) elevado a um expoente (b) é representada como (a^b). O cálculo é simples para inteiros positivos, onde a base é multiplicada por si mesma (b) vezes. Para outros casos, como expoentes fracionários, negativos ou irracionais, a matemática envolve conceitos mais avançados, como raízes e logaritmos. Em termos simples:
+            <br>( a^b = a )
+            <br> Para cálculos fracionários:
+            <br>( a^{1/n} = \sqrt[n]{a})</p>
+        </div>
+
+        <div class="info">
+            <h2>Logaritmo</h2>
+            <p><strong>História:</strong> Os logaritmos foram introduzidos pelo matemático escocês John Napier em 1614 como uma maneira de simplificar cálculos multiplicativos em aditivos, especialmente úteis na era pré-calculadora. Henry Briggs popularizou a base 10, conhecida como logaritmos comuns, enquanto Euler mais tarde introduziu a base \(e\) (logaritmo natural).</p>
+            <p><strong>Propósito:</strong> Os logaritmos transformam operações de multiplicação em adição e divisões em subtrações, facilitando cálculos complexos. Eles são cruciais na resolução de equações exponenciais, análise de crescimento e decaimento, e em disciplinas como astronomia, engenharia, economia e ciência da computação.</p>
+            <p><strong>Cálculo:</strong> O logaritmo de um número (x) na base (b) é o expoente (y) ao qual a base deve ser elevada para obter (x):
+            <br> (log_b(x) = y b^y = x)
+            <br> Para calcular logaritmos usamos (log):
+            <br> log_b(x) - log_{10}(x) - log_{10}(b)
+        </div>
+    </div>
+    <script src="/parte 05/script.js"></script>
+</body>
+</html>
