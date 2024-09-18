@@ -1,4 +1,4 @@
 # CALCULADORA-EXPONENCIAL-E-LOGARITMO-
 CALCULADORA ( EXPONENCIAL E LOGARITMO)
 O CODIGO NÃO ESTA COMPLETO. FIQUE LIVRE PARA EDITAR!!
-Paste 05 - Seria o Projeto final (usado pra apresentar)
+Parte 05 - Seria o Projeto final (usado pra apresentar)
